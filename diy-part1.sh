@@ -23,3 +23,5 @@ git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
 git clone https://github.com/jerrykuku/luci-app-argon-config.git
 git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git
 sed -i 's/OpenWrt/OpenWRT_WSure_$(date "+%Y.%m.%d")/g' package/lean/default-settings/files/zzz-default-settings
+sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
+sed -i 's/192.168.1.1/192.168.6.1/g' package/base-files/files/bin/config_generate
